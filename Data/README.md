@@ -11,7 +11,6 @@
 
 
 ## Exemple de requête
-- Sélection la distance entre deux géométrie (Attention: Passer les géométries en type géography pour avoir le résultat en mètre)
-<br>
+- Sélection la distance entre deux géométrie (Attention: Passer les géométries en type géography pour avoir le résultat en mètre)   
 SELECT ST_Distance(Geography(ST_GeomFromText('POINT(-4.4860088 48.3905283)', 4326)), Geography(geom))
 FROM cinemas
