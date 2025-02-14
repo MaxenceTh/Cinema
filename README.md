@@ -10,6 +10,7 @@ Ce projet permet d'explorer les possibilité que l'on peut avoir avec les coordo
 - npm install tailwindcss @tailwindcss/vite
 - npm install leaflet
 - npm install react-leaflet@next
+- npm install axios
 
 
 ## Tuto / Aide
