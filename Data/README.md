@@ -4,3 +4,7 @@
 ## Configuration
 - Installation de postgre et postgis (avec Stack Builder )
 - Dans la base de données "CREATE EXTENSION postgis;"
+
+
+## Documentation
+- https://docs.snowflake.com/sql-reference/functions-geospatial
