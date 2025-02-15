@@ -1,6 +1,9 @@
 # Les données
 - https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/export/?refine.region_administrative=BRETAGNE&refine.multiplexe=OUI
 
+## Script.py
+- Le script permet d'insérer les données du fichier csv dans la base de données. Avec la possibilité de directement créer la table.
+
 ## Configuration
 - Installation de postgre et postgis (avec Stack Builder )
 - Dans la base de données "CREATE EXTENSION postgis;"

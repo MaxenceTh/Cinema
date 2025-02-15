@@ -55,12 +55,14 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- Coordonnées géographiques -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-spatial</artifactId>
 			<version>6.6.5.Final</version>
 		</dependency>
 
+		
 
 		<!-- https://github.com/locationtech/jts/blob/master/USING.md -->
 		<dependency>

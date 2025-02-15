@@ -33,24 +33,27 @@ const SimpleMap = () => {
             });
     }, []);
 
-    return (
-        <MapContainer center={[latitude, longitude]} zoom={13} ref={mapRef} style={{ height: "70vh", width: "100%" }}>
-            <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
+    if (cinemas != null) {
 
-            {/* Ajout dynamique des markers */}
-            {cinemas.map((cinema) => (
-                <Marker key={cinema.id} position={[cinema.latitude, cinema.longitude]}>
-                    <Popup>
-                        <strong>{cinema.nom}</strong>
-                    </Popup>
-                </Marker>
-            ))}
+        return (
+            <MapContainer center={[latitude, longitude]} zoom={13} ref={mapRef} style={{ height: "70vh", width: "100%" }}>
+                <TileLayer
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
 
-        </MapContainer>
-    );
+                {/* Ajout dynamique des markers */}
+                {cinemas.map((cinema) => (
+                    <Marker key={cinema.id} position={[cinema.latitude, cinema.longitude]}>
+                        <Popup>
+                            <strong>{cinema.nom}</strong>
+                        </Popup>
+                    </Marker>
+                ))}
+
+            </MapContainer>
+        );
+    }
 };
 
 export default SimpleMap;

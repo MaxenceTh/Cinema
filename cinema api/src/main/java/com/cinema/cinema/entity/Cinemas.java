@@ -54,7 +54,22 @@ public class Cinemas {
 
     // @Column(columnDefinition = "geom(Point,4326)")
     // private Point geom;
-    
+
+    // ⚡ Constructeur par défaut (obligatoire pour JPA)
+    public Cinemas() {
+    }
+
+    // ⚡ Constructeur avec paramètres pour l'import CSV
+    public Cinemas(String nom, String adresse, String commune, Integer ecrans, Integer fauteuils, Float latitude,
+            Float longitude) {
+        this.nom = nom;
+        this.adresse = adresse;
+        this.commune = commune;
+        this.ecrans = ecrans;
+        this.fauteuils = fauteuils;
+        this.latitude = latitude;
+        this.longitude = longitude;
+    }
 
     // Getters et Setters
     public Integer getId() {
@@ -161,28 +176,28 @@ public class Cinemas {
         this.multiplexe = multiplexe;
     }
 
-    public Float getLatitude(){
+    public Float getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(Float latitude){
+    public void setLatitude(Float latitude) {
         this.latitude = latitude;
     }
 
-    public Float getLongitude(){
+    public Float getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(Float longitude){
+    public void setLongitude(Float longitude) {
         this.longitude = longitude;
     }
 
     // public Point getLocalisation() {
-    //     return geom;
+    // return geom;
     // }
 
     // public void setLocalisation(Point localisation) {
-    //     this.geom = localisation;
+    // this.geom = localisation;
     // }
 
 }

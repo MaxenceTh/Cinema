@@ -22,4 +22,5 @@ public class CinemaController {
     public List<Cinemas> getCinemas() {
         return cinemaService.getAllCinemas();
     }
+
 }

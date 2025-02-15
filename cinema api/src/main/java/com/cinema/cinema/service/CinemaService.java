@@ -2,7 +2,9 @@ package com.cinema.cinema.service;
 
 import com.cinema.cinema.entity.Cinemas;
 import com.cinema.cinema.repository.CinemaRepository;
+
 import org.springframework.stereotype.Service;
+
 
 import java.util.List;
 
@@ -17,4 +19,6 @@ public class CinemaService {
     public List<Cinemas> getAllCinemas() {
         return cinemaRepository.findAll();
     }
+
+   
 }
