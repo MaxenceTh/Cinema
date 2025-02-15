@@ -50,8 +50,8 @@ with open("etablissements-cinematographiques.csv", "r", encoding="utf-8") as fil
              row[2], row[4], row[5], row[6], float(row[7]) if row[7] else None, row[8],
             int(float(row[13])) if row[13] else None, int(float(row[14])) if row[14] else None,
             float(row[17]) if row[17] else None, float(row[18]) if row[18] else None,
-            float(row[19]) if row[19] else None, row[25],
-            float(row[35]) if row[35] else None, float(row[36]) if row[36] else None
+            float(row[19]) if row[19] else None, row[26],
+            float(row[37]) if row[37] else None, float(row[38]) if row[38] else None
         ))
 
 # Valider et fermer la connexion
