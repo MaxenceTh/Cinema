@@ -42,12 +42,12 @@ with open("etablissements-cinematographiques.csv", "r", encoding="utf-8") as fil
     for row in reader:
         cursor.execute('''
             INSERT INTO cinemas (
-                nom, adresse, code_insee, commune, population_commune, dep,
+                nom, region, adresse, code_insee, commune, population_commune, dep,
                 ecrans, fauteuils, entrees_2022, entrees_2021,
                 evolution_entrees, multiplexe, latitude, longitude
-            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         ''', (
-             row[2], row[4], row[5], row[6], float(row[7]) if row[7] else None, row[8],
+             row[2],row[3], row[4], row[5], row[6], float(row[7]) if row[7] else None, row[8],
             int(float(row[13])) if row[13] else None, int(float(row[14])) if row[14] else None,
             float(row[17]) if row[17] else None, float(row[18]) if row[18] else None,
             float(row[19]) if row[19] else None, row[26],

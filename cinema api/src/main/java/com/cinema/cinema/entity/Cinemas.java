@@ -13,6 +13,9 @@ public class Cinemas {
     @Column(columnDefinition = "nom")
     private String nom;
 
+    @Column(columnDefinition = "region")
+    private String region;
+
     @Column(columnDefinition = "adresse")
     private String adresse;
 
@@ -60,7 +63,7 @@ public class Cinemas {
     }
 
     // ⚡ Constructeur avec paramètres pour l'import CSV
-    public Cinemas(String nom, String adresse, String commune, Integer ecrans, Integer fauteuils, Float latitude,
+    public Cinemas(String nom, String region, String adresse, String commune, Integer ecrans, Integer fauteuils, Float latitude,
             Float longitude) {
         this.nom = nom;
         this.adresse = adresse;
@@ -86,6 +89,14 @@ public class Cinemas {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
     }
 
     public String getAdresse() {
