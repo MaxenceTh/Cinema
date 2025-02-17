@@ -23,4 +23,11 @@ public class CinemaController {
         return cinemaService.getAllCinemas();
     }
 
+
+    // Récupère les cinémas par région
+    @GetMapping("/region")
+    public List<Cinemas> getCinemaByRegion(@RequestParam String region) {
+        return cinemaService.getCinemasByRegion(region);
+    }
+
 }

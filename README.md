@@ -11,6 +11,7 @@ Ce projet permet d'explorer les possibilité que l'on peut avoir avec les coordo
 - npm install leaflet
 - npm install react-leaflet@next
 - npm install axios
+- npm i --save react-select
 
 
 ## Tuto / Aide

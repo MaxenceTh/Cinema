@@ -20,5 +20,9 @@ public class CinemaService {
         return cinemaRepository.findAll();
     }
 
+    public List<Cinemas> getCinemasByRegion(String region){
+        return cinemaRepository.findByRegion(region);
+    }
+
    
 }

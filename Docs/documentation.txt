@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------------------------------------------
+🔹 Qu'est-ce qu'un prop en React ?
+Le mot "prop" est une abréviation de "property" (propriété en anglais).
+En React, les props permettent de transmettre des données d'un composant parent à un composant enfant.
+
+--> SimpleMap reçoit la région sélectionnée en prop : 
+permet à SimpleMap d'afficher les cinémas en fonction de la région choisie dans Outils.
+
+📌 Récapitulatif :
+Outils est le parent → il stocke la région sélectionnée (selectedRegion).
+SimpleMap est l'enfant → il reçoit region en prop pour récupérer les cinémas correspondants.
+=> Les props permettent donc de faire communiquer les composants entre eux. 🚀
+
+-------------------------------------------------------------------------------------------------------------------
+
+🔹 Qu'est-ce que useEffect ?
+C'est un hook React qui permet d'exécuter du code lorsqu'un composant est monté (affiché à l'écran) ou lorsqu'une dépendance change.
+Sa syntaxe de base est :
+
+useEffect(() => {
+    // Code exécuté au montage ou lorsqu'une dépendance change
+}, [/* Dépendances */]);
+
+--> Sans dépendances ([]) → le code s'exécute une seule fois (au montage du composant).
+--> Avec des dépendances ([region]) → le code s'exécute à chaque changement de la valeur dans le tableau.
+
+📌 Que se passe-t-il ici ?
+Quand SimpleMap s'affiche pour la première fois, useEffect est exécuté car region a une valeur initiale (ex: "BRETAGNE").
+À chaque fois que region change, React exécute à nouveau le useEffect, ce qui :
+> Met à jour l'URL de l'API (baseURL).
+> Fait une requête HTTP GET avec axios pour récupérer les cinémas de cette région.
+> Met à jour l'état cinemas avec setCinemas(response.data), ce qui rafraîchit l'affichage de la carte avec les nouveaux cinémas.
+
+🔥 Pourquoi utiliser useEffect ici ?
+✅ Évite les boucles infinies : Sans useEffect, l'état serait mis à jour après chaque requête, entraînant un rendu infini.
+✅ Réduit les appels API : L'appel API ne se fait que si region change, évitant des requêtes inutiles.
+✅ Optimise l'affichage : Seuls les cinémas de la région sélectionnée sont affichés, sans recharger la page.
+
+🚀 Conclusion
+--> useEffect permet de déclencher la requête API seulement quand region change.
+--> Les cinémas sont mis à jour dynamiquement grâce à setCinemas(response.data).
+--> Cela permet une expérience utilisateur fluide où la carte se met à jour sans rafraîchir la page.
+
+-------------------------------------------------------------------------------------------------------------------
