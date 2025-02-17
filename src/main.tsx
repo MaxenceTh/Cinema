@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import SimpleMap from './components/SimpleMap'
 import Outils from './components/Outils'
 
 

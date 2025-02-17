@@ -17,17 +17,23 @@ public class CinemaController {
         this.cinemaService = cinemaService;
     }
 
-    // Récupère tout les cinémas
+    // Get all cinemas
     @GetMapping("/all")
     public List<Cinemas> getCinemas() {
         return cinemaService.getAllCinemas();
     }
 
 
-    // Récupère les cinémas par région
+    // Get cinemas by region
     @GetMapping("/region")
     public List<Cinemas> getCinemaByRegion(@RequestParam String region) {
         return cinemaService.getCinemasByRegion(region);
+    }
+
+    // Get all the region available
+    @GetMapping("/listRegion")
+    public List<String> getAllRegion() {
+        return cinemaService.getAllRegions();
     }
 
 }
