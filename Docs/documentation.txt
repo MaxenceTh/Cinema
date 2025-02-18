@@ -42,3 +42,6 @@ Quand SimpleMap s'affiche pour la première fois, useEffect est exécuté car re
 --> Cela permet une expérience utilisateur fluide où la carte se met à jour sans rafraîchir la page.
 
 -------------------------------------------------------------------------------------------------------------------
+
+📌 useState en React
+useState est un hook de React qui permet d’ajouter un état local dans un composant fonctionnel.
