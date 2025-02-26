@@ -1,7 +1,10 @@
 # Cinema Application
 
-Cette application a pour but d'afficher les coordonnées des cinémas en france.
-Ce projet permet d'explorer les possibilité que l'on peut avoir avec les coordonnées géographiques
+Cette application a pour but d'explorer quelques possibilités que l'on peut avoir avec les coordonnées géographiques.
+Par ailleurs, ce projet me permet d'utiliser des technologies telles que React, Tailwind pour la partie front. Et PostgreSQL, Spring boot
+pour la partie back.
+
+Pour les données utilisés --> [Data](Data/README.md)
 
 ## Fonctionnalités
 
@@ -13,8 +16,10 @@ Bretagne:
 Ile de france:
 ![Carte Bretagne](public/assets/ReadMe_img/Ile-de-france.png)
 
-### Affichage des informations d'un cinémas
+### Affichage des informations d'un cinéma
 ![Infomartions cinémas](public/assets/ReadMe_img/Information%20sur%20un%20cinema.png)
+
+### ... (en cours)
 
 
 ## Installtion npm
