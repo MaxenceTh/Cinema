@@ -4,7 +4,8 @@ Cette application a pour but d'explorer quelques possibilités que l'on peut avo
 Par ailleurs, ce projet me permet d'utiliser des technologies telles que React, Tailwind pour la partie front. Et PostgreSQL, Spring boot
 pour la partie back.
 
-Pour les données utilisés --> [Data](Data/README.md)
+Pour les données utilisés --> [Data](Data/README.md)  
+
 Pour l'utilisation de la carte --> [Carte](https://react-leaflet.js.org/)
 
 ## Fonctionnalités
