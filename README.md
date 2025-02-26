@@ -3,6 +3,10 @@
 Cette application a pour but d'afficher les coordonnées des cinémas en france.
 Ce projet permet d'explorer les possibilité que l'on peut avoir avec les coordonnées géographiques
 
+# Fonctionnalités
+
+![Carte Leaflet](public/assets/Bretagne.png)
+
 
 ## Installtion npm
 
