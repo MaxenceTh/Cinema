@@ -5,6 +5,7 @@ Par ailleurs, ce projet me permet d'utiliser des technologies telles que React, 
 pour la partie back.
 
 Pour les données utilisés --> [Data](Data/README.md)
+Pour l'utilisation de la carte --> [Carte](https://react-leaflet.js.org/)
 
 ## Fonctionnalités
 
