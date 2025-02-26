@@ -13,6 +13,9 @@ Bretagne:
 Ile de france:
 ![Carte Bretagne](public/assets/ReadMe_img/Ile-de-france.png)
 
+### Affichage des informations d'un cinémas
+![Infomartions cinémas](public/assets/ReadMe_img/Information%20sur%20un%20cinema.png)
+
 
 ## Installtion npm
 
