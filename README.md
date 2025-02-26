@@ -5,7 +5,7 @@ Ce projet permet d'explorer les possibilité que l'on peut avoir avec les coordo
 
 # Fonctionnalités
 
-![Carte Leaflet](public/assets/Bretagne.png)
+![Carte Leaflet](public/assets/ReadMe_img/Bretagne.png)
 
 
 ## Installtion npm
